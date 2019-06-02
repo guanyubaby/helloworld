@@ -5,7 +5,7 @@ class point
 	public:
 		point(){x=0;y=0;};
 		point(int a,int b):x(a),y(b){};
-	//	void display(){cout<<"×ø±êÊÇ:("<<x<<","<<y<<")"<<endl;};
+	//	void display(){cout<<"åæ ‡æ˜¯:("<<x<<","<<y<<")"<<endl;};
 		friend  ostream & operator<<(ostream &os,point&p);
 		point operator+(point &a){
 			point c;
@@ -23,7 +23,7 @@ class point
 
 ostream & operator<<(ostream &os,point&p)
 {
-	os<<"×ø±êÊÇ:("<<p.x<<","<<p.y<<")"<<endl;
+	os<<"åæ ‡æ˜¯:("<<p.x<<","<<p.y<<")"<<endl;
 
 	return os;
 };
